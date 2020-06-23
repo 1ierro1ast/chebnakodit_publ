@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>chebnakodit</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+		<script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+		<style>
+			a{text-decoration: none; color:#06266F;}
+			a:hover{text-decoration: none;color:#06266F;}
+			a:active{text-decoration: none;color:#06266F;}
+			a:visited{text-decoration: none;color:#06266F;}
+		</style>
+	</head>
+	<body>
+		<div id="header">ЧЁ Б НАКОДИТЬ?..</div>
+		<div id="content">
+		<div id="contentWrapper">
+
+		<a href="/getIdea">
+			<div id="getIdeaPad">
+				Мне нужна идея
+			</div>
+		</a>
+		<a href="/postIdea">
+			<div id="postIdeaPad">
+				Предложить идею
+			</div>
+		</a>
+		</div>
+		</div>
+	</body>
+</html>

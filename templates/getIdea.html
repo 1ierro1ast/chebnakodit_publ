@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>chebnakodit</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+		<script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+		<style>
+			a{text-decoration: none; color:#E0E0E0;}
+			a:hover{text-decoration: none;color:#E0E0E0;}
+			a:active{text-decoration: none;color:#E0E0E0;}
+			a:visited{text-decoration: none;color:#E0E0E0;}
+		</style>
+		<script type="text/javascript">
+			window.onload = function () {
+    			var a = document.getElementById('buttonGetIdea');
+    			a.onclick = function() {
+        			document.location.replace('/getIdea');
+            	}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">ЧЁ Б НАКОДИТЬ?..</div>
+		<div id="content">
+		<div id="contentWrapper">
+
+		<div id="thinker">{{idea}}</div>
+		
+		<div class="button" id="buttonGetIdea">Подай идею</div>
+		
+
+		</div>
+		</div>
+	</body>
+</html>
